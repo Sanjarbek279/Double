@@ -1,0 +1,116 @@
+#Version {
+    margin-top: 30px;
+  display: flex;
+  padding-top: 192px;
+  padding-bottom: 132px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background: linear-gradient(
+      45deg,
+      rgba(255, 207, 35, 0.7) 0%,
+      rgba(255, 226, 123, 0.7) 100%
+    ),
+    url(<path-to-image>),
+    lightgray -21.396px -237.959px / 106.442% 256.268% no-repeat;
+  background-image: url(../imges/bg_img);
+  background-position-x: center;
+  .text_version {
+    display: flex;
+    flex-direction: column;
+    p {
+      align-self: stretch;
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+    h2 {
+        padding-top: 12px;
+        width: 328px;
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        padding-bottom: 32px;
+    }
+    button {
+      display: flex;
+      height: 40px;
+      padding: 6px 16px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 24px;
+      background: var(--anti-flash-white, #f3f3f3);
+      gap: 10px;
+      color: var(--black, #000);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+  }
+}
+
+@media screen and (min-width:744px) {
+    #Version{
+      background-image:url(../imges/bg_img) ;
+      .text_version{
+        h2{
+            font-size: 36px;
+            width: 600px;
+        }
+        button{
+            width: 182px;
+            margin: 0 auto;
+        }
+      }
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    #Version{
+      background-image:url(../imges/bg_img) ;
+      .text_version{
+        h2{
+            font-size: 40px;
+            width: 600px;
+        }
+        button{
+            width: 182px;
+            margin: 0 auto;
+        }
+      }
+    }
+    
+}
+
+@media screen and (min-width:1440px) {
+    #Version{
+      background-image:url(../imges/bg_img);
+      padding: 192px 450px;
+      height: 720px;
+      .text_version{
+          h2{
+            width: 600px;
+        }
+        button{
+            width: 182px;
+            margin: 0 auto;
+        }
+      }
+    }
+    
+}

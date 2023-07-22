@@ -1,0 +1,263 @@
+footer {
+  background: var(--black, #000);
+  .footer {
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 20px;
+    align-self: stretch;
+    .F_logo {
+      margin: 0 auto;
+      h2 {
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    .columns {
+      margin: 0 auto;
+      display: flex;
+      text-align: center;
+      column-gap: 10px;
+      .column1 {
+        h4 {
+          align-self: stretch;
+          color: #fff;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+        }
+        p {
+          color: #fff;
+          padding-top: 8px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .email {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    gap: 23px;
+    h4 {
+      color: #fff;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+    p {
+      align-self: stretch;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      opacity: 0.4000000059604645;
+    }
+    .input {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      max-width: 330px;
+      margin: 0 auto;
+      input {
+        width: 100%;
+        padding: 12px 50px 12px 24px;
+        align-items: flex-start;
+        align-self: stretch;
+        border: none;
+        font-size: 15px;
+        color: #fff;
+        border-radius: 40px;
+        background: rgba(255, 255, 255, 0.15);
+      }
+      img {
+        display: flex;
+        position: absolute;
+        left: 180px;
+        top: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 744px) {
+  footer {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .F_logo {
+        width: 100%;
+        h2 {
+          left: 10px;
+        }
+      }
+      .columns {
+        text-align: start;
+        .column1 {
+          width: 155px;
+          h4 {
+            text-align: start;
+            color: #fff;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .email {
+      max-width: 220px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .F_logo {
+        width: auto;
+      }
+      .columns {
+        text-align: start;
+        margin-top: 40px;
+        margin-left: -175px;
+        .column1 {
+          width: 155px;
+          h4 {
+            text-align: start;
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .email {
+      max-width: 240px;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    .footer {
+      max-width: 1388px;
+      display: flex;
+      flex-direction: row;
+
+      .columns {
+        max-width: 1388px;
+        text-align: start;
+        margin: 0 auto;
+        .column1 {
+          width: 224px;
+          gap: 16px;
+          h4 {
+            color: #fff;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+          }
+          p {
+            font-size: 14px;
+            margin-top: 8px;
+          }
+        }
+      }
+      .email {
+        max-width: 228px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        gap: 23px;
+        h4 {
+          color: #fff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+          text-align: start;
+        }
+        p {
+          align-self: stretch;
+          color: #fff;
+          text-align: center;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          opacity: 0.4000000059604645;
+        }
+        .input {
+          width: 228px;
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          max-width: 330px;
+          margin: 0 auto;
+          input {
+            width: 100%;
+            padding: 12px 100px 12px 24px;
+            align-items: flex-start;
+            align-self: stretch;
+            border: none;
+            font-size: 15px;
+            color: #fff;
+            border-radius: 40px;
+            background: rgba(255, 255, 255, 0.15);
+          }
+          img {
+            display: flex;
+            position: absolute;
+            left: 190px;
+            top: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
